@@ -51,10 +51,10 @@ function App() {
       <Routes> 
           <Route>
               <Route path='/' element={<ReportComponent/>}/>
-              <Route path='/insert' element={<Formcomponent onAddItem={onAddNewItem}/>}/>
+              <Route path='/insert' element={<><Formcomponent onAddItem={onAddNewItem}/><Transaction items = {items}/></>}/>
           </Route>
       </Routes>      
-              <Transaction items = {items}/>
+              
               
           
       </div>
